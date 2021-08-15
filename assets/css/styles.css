@@ -25,6 +25,12 @@ button:hover, .btn-primary:hover {
     border-color: #5a6255!important;
 }
 
+button, .btn-primary {
+    background-color: #252e20!important;
+    border-color: #9da599!important;
+
+}
+
 nav button {
     background-color: #9da599!important;
 }
@@ -33,11 +39,7 @@ nav button {
     color: #252e20!important;
 }
 
-button, .btn-primary {
-    background-color: #252e20!important;
-    border-color: #252e20!important;
 
-}
 
 .timeline-image {
     background-color: #252e20!important;
