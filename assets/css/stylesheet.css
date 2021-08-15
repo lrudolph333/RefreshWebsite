@@ -1,0 +1,48 @@
+/*Custom Styles*/
+
+a {
+    color: #252e20;
+}
+
+a.active {
+    color: #252e20!important;
+}
+
+li.nav > a {
+    color: #fffae8;
+}
+
+nav a.active {
+    color: #9da599!important;
+}
+
+a:hover {
+    color: #5a6255!important;
+}
+
+button:hover, .btn-primary:hover {
+    background-color: #5a6255!important;
+    border-color: #5a6255!important;
+}
+
+nav button {
+    background-color: #9da599!important;
+}
+
+.text-primary {
+    color: #252e20!important;
+}
+
+button, .btn-primary {
+    background-color: #252e20!important;
+    border-color: #252e20!important;
+
+}
+
+.timeline-image {
+    background-color: #252e20!important;
+}
+
+input:focus, .form-control:focus-within {
+    border-color: #5a6255!important;
+}

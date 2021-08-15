@@ -19,11 +19,14 @@
     <link rel="stylesheet" href="assets/css/Social-Icons.css">
     <link rel="stylesheet" href="assets/css/Team-Boxed.css">
     <link rel="stylesheet" href="assets/css/untitled.compiled.css">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+
 </head>
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
-        <div class="container-fluid"><a class="navbar-brand" href="#page-top">Refresh</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
+        <div class="container-fluid"><img src="./assets/img/Refresh.png" alt="" style="max-height: 7vh"><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto text-uppercase">
@@ -36,31 +39,33 @@
             </div>
         </div>
     </nav>
-    <section id="contact" style="background-image: url('assets/img/map-image.png');">
+<!--    TODO: add recaptcha to avoid bots, fix required feilds to actually be required, add "add to mailing list" checkbox-->
+    <section id="contact" style="background-image: url('assets/img/ContactUs/map-image.png');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-uppercase section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">We want to hear from you! Feel free to reach out with any questions, concerns, or comments.</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form id="contactForm" name="contactForm" novalidate="novalidate">
+                    <form id="contactForm" name="contactForm" action="https://send.pageclip.co/to5MZZ8ZVU2QOWfiSAtUiM3TGBcJctW9/" class="pageclip-form" method="post" novalidate="novalidate">
                         <div class="form-row">
                             <div class="col col-md-6">
-                                <div class="form-group"><input class="form-control" type="text" id="name" placeholder="Your Name *" required=""><small class="form-text text-danger flex-grow-1 help-block lead"></small></div>
-                                <div class="form-group"><input class="form-control" type="email" id="email" placeholder="Your Email *" required=""><small class="form-text text-danger help-block lead"></small></div>
-                                <div class="form-group"><input class="form-control" type="tel" placeholder="Your Phone *" required=""><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group"><input name="name" class="form-control" type="text" id="name" placeholder="Your Name" required><small class="form-text text-danger flex-grow-1 help-block lead"></small></div>
+                                <div class="form-group"><input name="email" class="form-control" type="email" id="email" placeholder="Your Email *" required><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group"><input name="phone" class="form-control" type="tel" placeholder="Your Phone"><small class="form-text text-danger help-block lead"></small></div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group"><textarea class="form-control" id="message" placeholder="Your Message *" required=""></textarea><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group"><textarea name="message" class="form-control" id="message" placeholder="Your Message *" required></textarea><small class="form-text text-danger help-block lead"></small></div>
                             </div>
                             <div class="col">
                                 <div class="clearfix"></div>
                             </div>
                             <div class="col-lg-12 text-center">
-                                <div id="success"></div><button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button></div>
+                                <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+                                <div id="success"></div><button class="btn btn-primary btn-xl text-uppercase pageclip-form__submit" id="sendMessageButton" type="submit"><span>Send Message</span></button></div>
                         </div>
                     </form>
                 </div>
@@ -84,6 +89,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/agency.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.9.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.9.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
 </body>
 
 </html>
