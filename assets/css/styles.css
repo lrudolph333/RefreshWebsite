@@ -48,3 +48,9 @@ nav button {
 input:focus, .form-control:focus-within {
     border-color: #5a6255!important;
 }
+
+
+#promoBanner {
+    border: 10px solid #252e20;
+    padding: 10px;
+}
