@@ -54,3 +54,8 @@ input:focus, .form-control:focus-within {
     border: 10px solid #252e20;
     padding: 10px;
 }
+
+#homeLandingImage {
+    background-attachment: fixed!important;
+    /*background: linear-gradient(rgba(37,46,32,0.73) 100%, rgba(245,229,195, 1) 100%),url(&quot;../img/home/Interior.jpg&quot;) center / cover;*/
+}
