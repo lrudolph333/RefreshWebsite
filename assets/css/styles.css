@@ -59,3 +59,44 @@ input:focus, .form-control:focus-within {
     background-attachment: fixed!important;
     /*background: linear-gradient(rgba(37,46,32,0.73) 100%, rgba(245,229,195, 1) 100%),url(&quot;../img/home/Interior.jpg&quot;) center / cover;*/
 }
+
+/*Fade in styles*/
+
+.fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+}
+.fade-in-slow {
+    animation: fadeIn ease 9s;
+    -webkit-animation: fadeIn ease 9s;
+    -moz-animation: fadeIn ease 9s;
+    -o-animation: fadeIn ease 9s;
+    -ms-animation: fadeIn ease 9s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
