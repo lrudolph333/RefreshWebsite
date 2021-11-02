@@ -57,6 +57,7 @@ input:focus, .form-control:focus-within {
 
 #homeLandingImage {
     background-attachment: fixed!important;
+    /*height: 90vh;
     /*background: linear-gradient(rgba(37,46,32,0.73) 100%, rgba(245,229,195, 1) 100%),url(&quot;../img/home/Interior.jpg&quot;) center / cover;*/
 }
 
